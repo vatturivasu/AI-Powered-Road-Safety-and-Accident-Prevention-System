@@ -1,0 +1,8 @@
+streamlit
+opencv-python-headless
+Pillow
+numpy
+matplotlib
+# Optional for better detection (install if you want real inference)
+ultralytics
+torch
