@@ -1,8 +1,10 @@
-streamlit
-opencv-python-headless
+streamlit>=1.25
+numpy>=1.24
+pandas
 Pillow
-numpy
-matplotlib
-# Optional for better detection (install if you want real inference)
-ultralytics
-torch
+# Use headless OpenCV for server environments. If OpenCV import fails on the cloud, use the safe option:
+opencv-python-headless==4.7.0.72
+
+# Optional (enable only if you want YOLO inference on cloud and have compatible torch):
+# ultralytics
+# torch~=2.2.0  # pin a version compatible with ultralytics and the cloud runner
